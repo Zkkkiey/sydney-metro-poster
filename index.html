@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sydney Metro Poster References</title>
+<title>Behind Our Poster</title>
 <meta name="description" content="Supplementary data and method notes for the PMGT5811 Group 2 poster on Sydney Metro City & Southwest.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,48 +58,163 @@ code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;background
 .refs li{margin-bottom:6px;padding-left:2.2em;text-indent:-2.2em;overflow-wrap:anywhere}
 .refs a{color:var(--accent)}
 footer{border-top:1px solid var(--rule);margin-top:36px;padding-top:14px;font-size:14px;color:var(--muted)}
+.guide{background:var(--panel);border-left:4px solid var(--accent);border-radius:4px;padding:14px 16px;margin:6px 0 22px}
+.guide p{margin:0 0 8px}.guide p:last-child{margin:0}.guide .hi{font-weight:700;font-family:var(--display);font-size:18px}
+#refs h3{font-size:15px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:22px 0 8px}
+a.open{display:inline-block;font-size:13px;font-weight:600;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:1px 9px;margin-left:2px;text-decoration:none;text-indent:0;white-space:nowrap}
+a.open:hover{background:var(--accent);color:var(--bg)}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 4px}
+.chips a{font-size:14px;font-weight:600;color:var(--accent);background:var(--panel);border-radius:999px;padding:6px 14px;text-decoration:none}
+.chips a:hover{background:var(--accent);color:var(--bg)}
+.sec-label{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+#cpi h2{font-size:24px;margin-bottom:12px}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.card{border-radius:8px;padding:14px 14px 12px;background:var(--panel)}
+.card .big{font-family:var(--display);font-weight:700;font-size:clamp(26px,7vw,34px);line-height:1.05;display:block}
+.card .lbl{font-size:14px;color:var(--muted);display:block;margin-top:4px}
+.card.nom{border-top:4px solid var(--sw)} .card.nom .big{color:var(--sw)}
+.card.real{border-top:4px solid var(--accent)} .card.real .big{color:var(--accent)}
+.chart{margin:4px 0 18px}
+.chart svg{width:100%;height:auto;display:block}
+.chart .t{fill:var(--fg);font-family:var(--body);font-size:13px}
+.chart .m{fill:var(--muted);font-family:var(--body);font-size:11px}
+.chart .grid{stroke:var(--rule);stroke-width:1}
+.steps{list-style:none;padding:0;margin:8px 0 16px;counter-reset:s}
+.steps li{position:relative;padding:10px 12px 10px 46px;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin:0}
+.steps li:last-child{border-bottom:none}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:9px;width:26px;height:26px;border-radius:50%;background:var(--panel);color:var(--accent);font-weight:700;font-size:14px;display:grid;place-items:center}
+.steps .v{font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.steps .x{font-size:15px}
+.steps .x small{color:var(--muted);font-size:13px}
+.formula{background:var(--panel);border-radius:8px;padding:12px 14px;margin:0 0 16px;font-size:15px}
+.formula b{font-variant-numeric:tabular-nums}
+.limits{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:8px 0 16px}
+.limits div{border:1px solid var(--rule);border-radius:8px;padding:10px 12px;font-size:15px}
+.limits b{display:block;color:var(--accent);font-size:13px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
+.takeaway{border-left:4px solid var(--accent);padding:4px 0 4px 14px;font-weight:600;margin:6px 0 34px}
+hr.sep{border:none;border-top:1px solid var(--rule);margin:8px 0 26px}
 </style>
 </head>
 <body>
 <main class="wrap">
   <header>
-    <p class="eyebrow">PMGT5811 · Tuesday 6–7pm · Group 2 · Poster references</p>
-    <h1>Sydney Metro City &amp; Southwest: references</h1>
+    <p class="eyebrow">PMGT5811 · Tuesday 6–7pm · Group 2 · Poster supplement</p>
+    <h1>Sydney Metro City &amp; Southwest: behind our poster</h1>
     <p class="team">Zack Xia · Ying Li · Xuanang Zheng · Xinyi Gao · Jiaxi Yuan · Bingdong Bao · Yi Song &nbsp;|&nbsp; Supervisor: Sabine Ludewig</p>
     <div class="line" role="img" aria-label="Route: City section Chatswood to Sydenham, Southwest section Sydenham to Bankstown"></div>
     <div class="stations"><span>Chatswood</span><span>Central</span><b>Sydenham</b><span>Bankstown</span></div>
   </header>
 
-  <section id="refs">
-    <h2>References</h2>
-    <ol class="refs">
-      <li>[1] Audit Office of New South Wales 2026, <i>Capital projects 2025</i>, NSW Auditor-General's Report to Parliament, 18 March, viewed 17 October 2026, <a href="https://www.audit.nsw.gov.au/sites/default/files/documents/Final%20-%20Capital%20Projects%202025.pdf">audit.nsw.gov.au</a>.</li>
-      <li>[2] Bowen, GA 2009, 'Document analysis as a qualitative research method', <i>Qualitative Research Journal</i>, vol. 9, no. 2, pp. 27–40, <a href="https://doi.org/10.3316/QRJ0902027">doi:10.3316/QRJ0902027</a>.</li>
-      <li>[3] NSW Government 2023a, <i>Sydney Metro Review</i>, media release, 13 April, viewed 22 October 2026, <a href="https://www.nsw.gov.au/media-releases/sydney-metro-review">nsw.gov.au</a>.</li>
-      <li>[4] NSW Government 2023b, <i>Minns Labor Government will deliver Sydenham to Bankstown section of City and Southwest Metro</i>, media release, 1 August, viewed 22 October 2026, <a href="https://www.nsw.gov.au/media-releases/sydenham-bankstown-metro">nsw.gov.au</a>.</li>
-      <li>[5] NSW Government 2024a, <i>Sydney Metro City to open on Monday 19 August</i>, media release, 16 August, viewed 22 October 2026, <a href="https://www.nsw.gov.au/media-releases/sydney-metro-city-to-open-on-monday-19-august">nsw.gov.au</a>.</li>
-      <li>[6] NSW Government 2024b, <i>T3 Bankstown line to close from Monday</i>, media release, 25 September, viewed 22 October 2026, <a href="https://www.nsw.gov.au/media-releases/t3-bankstown-line-to-close-from-monday">nsw.gov.au</a>.</li>
-      <li>[7] NSW Government 2025, <i>South West Metro conversion period to be extended into 2026</i>, ministerial release, 5 March, viewed 22 October 2026, <a href="https://www.nsw.gov.au/ministerial-releases/south-west-metro-conversion-period-to-be-extended-into-2026">nsw.gov.au</a>.</li>
-      <li>[8] NSW Treasury 2015, <i>Infrastructure statement 2015–16</i>, Budget Paper No. 2, NSW Government.</li>
-      <li>[9] NSW Treasury 2016, <i>Infrastructure statement 2016–17</i>, Budget Paper No. 2, NSW Government.</li>
-      <li>[10] NSW Treasury 2017, <i>Infrastructure statement 2017–18</i>, Budget Paper No. 2, NSW Government.</li>
-      <li>[11] NSW Treasury 2018, <i>Infrastructure statement 2018–19</i>, Budget Paper No. 2, NSW Government.</li>
-      <li>[12] NSW Treasury 2019, <i>Infrastructure statement 2019–20</i>, Budget Paper No. 2, NSW Government.</li>
-      <li>[13] NSW Treasury 2020, <i>Infrastructure statement 2020–21</i>, Budget Paper No. 3, NSW Government.</li>
-      <li>[14] NSW Treasury 2021, <i>Infrastructure statement 2021–22</i>, Budget Paper No. 3, NSW Government.</li>
-      <li>[15] NSW Treasury 2022, <i>Infrastructure statement 2022–23</i>, Budget Paper No. 3, NSW Government.</li>
-      <li>[16] NSW Treasury 2023, <i>Infrastructure statement 2023–24</i>, Budget Paper No. 3, NSW Government.</li>
-      <li>[17] NSW Treasury 2024, <i>Infrastructure statement 2024–25</i>, Budget Paper No. 3, NSW Government.</li>
-      <li>[18] NSW Treasury 2025, <i>Infrastructure statement 2025–26</i>, Budget Paper No. 3, NSW Government.</li>
-      <li>[19] NSW Treasury 2026, <i>Infrastructure statement 2026–27</i>, Budget Paper No. 3, NSW Government.</li>
-      <li>[20] Sydney Metro 2017, <i>Chatswood to Sydenham – Sydenham Station and Sydney Metro Trains Facility South: modification report summary</i>, June, Sydney Metro, Sydney, viewed 22 October 2026, <a href="https://www.sydneymetro.info/sites/default/files/2021-09/Sydenham%2520Station%2520modification%2520report%2520summary%2520June%25202017.pdf">sydneymetro.info</a>.</li>
-      <li>[21] Sydney Metro 2024, <i>City &amp; Southwest construction compliance report #15: 1 April 2024 to 30 September 2024</i>, version 1, November, viewed 22 October 2026, <a href="https://www.sydneymetro.info/sites/default/files/2025-01/ConstructionComplianceReport%2015-Apr-Sep24%20-%20Final%20-%20Merged%20v1.pdf">sydneymetro.info</a>.</li>
-      <li>[22] Sydney Metro 2025, <i>Update on Sydney Metro's Southwest conversion</i>, 5 March, viewed 22 October 2026, <a href="https://www.sydneymetro.info/article/update-sydney-metros-southwest-conversion">sydneymetro.info</a>.</li>
-      <li>[23] Sydney Metro 2026a, <i>Southwest Metro completes trial running phase</i>, 1 September, viewed 22 October 2026, <a href="https://www.sydneymetro.info/article/southwest-metro-completes-trial-running-phase">sydneymetro.info</a>.</li>
-      <li>[24] Sydney Metro 2026b, <i>City &amp; Southwest construction compliance report #18: 1 October 2025 to 31 March 2026</i>, version 1.2, May, viewed 22 October 2026, <a href="https://www.sydneymetro.info/sites/default/files/2026-07/Construction_Compliance_Report_18-October_25_to_March_26.pdf">sydneymetro.info</a>.</li>
-      <li>[25] Sydney Metro 2026c, <i>Southwest Metro project update</i>, April, viewed 22 October 2026, <a href="https://www.sydneymetro.info/sites/default/files/2026-04/Southwest%20Metro%20project%20update_April%202026.pdf">sydneymetro.info</a>.</li>
-      <li>[26] Transport for NSW n.d., <i>Southwest Link</i>, viewed 22 October 2026, <a href="https://transportnsw.info/southwest-link">transportnsw.info</a>.</li>
+  <nav class="chips" aria-label="On this page"><a href="#cpi">Inflation-adjusted cost</a><a href="#refs">All references</a></nav>
+
+  <section id="cpi">
+    <p class="sec-label">Extra analysis · not on the poster</p>
+    <h2>Cost rise after adjusting for inflation (indicative)</h2>
+    <p>The poster compares the 2016 and December 2025 cost estimates in nominal dollars, a rise of 76–100% [1, p. 19]. Part of this rise is only general price growth. As a reference, we used the ABS Consumer Price Index (CPI) to convert the 2016 estimate into 2025 prices.</p>
+
+    <div class="cmp">
+      <div class="card nom"><span class="big">+76–100%</span><span class="lbl">Nominal rise (on the poster)</span></div>
+      <div class="card real"><span class="big">+33–51%</span><span class="lbl">After removing inflation</span></div>
+    </div>
+
+    <div class="chart">
+      <svg viewBox="0 0 360 120" role="img" aria-label="Range chart: nominal cost rise 76 to 100 percent, inflation-adjusted cost rise 33 to 51 percent">
+        <g class="grid">
+          <line x1="80" y1="14" x2="80" y2="96"/><line x1="150" y1="14" x2="150" y2="96"/><line x1="220" y1="14" x2="220" y2="96"/><line x1="290" y1="14" x2="290" y2="96"/>
+        </g>
+        <text class="m" x="80" y="112" text-anchor="middle">0%</text><text class="m" x="150" y="112" text-anchor="middle">25%</text><text class="m" x="220" y="112" text-anchor="middle">50%</text><text class="m" x="290" y="112" text-anchor="middle">75%</text><text class="m" x="350" y="112" text-anchor="end">100%</text>
+        <text class="t" x="0" y="40">Nominal</text>
+        <rect x="292.8" y="28" width="67.2" height="16" rx="8" style="fill:var(--sw)"/>
+        <text class="t" x="0" y="76">Inflation-</text><text class="t" x="0" y="90">adjusted</text>
+        <rect x="172.4" y="72" width="50.4" height="16" rx="8" style="fill:var(--accent)"/>
+      </svg>
+    </div>
+
+    <h3>How we calculated it</h3>
+    <ol class="steps">
+      <li><span class="x">CPI, June quarter 2016<br><small>8 capital cities, 2011–12 = 100 [27]</small></span><span class="v">108.6</span></li>
+      <li><span class="x">CPI, September quarter 2025<br><small>same base [28]</small></span><span class="v">143.6</span></li>
+      <li><span class="x">Price growth<br><small>(143.6 − 108.6) ÷ 108.6 [29]</small></span><span class="v">32.2%</span></li>
+      <li><span class="x">2016 estimate in 2025 prices<br><small>$11.5–12.5bn × 1.322</small></span><span class="v">$15.2–16.5bn</span></li>
+      <li><span class="x">December 2025 estimate<br><small>[1, p. 19]</small></span><span class="v">$22–23bn</span></li>
     </ol>
+
+    <div class="formula">
+      Cost rise = (actual cost − estimated cost) ÷ estimated cost [30]<br>
+      Low end: (22 − 16.5) ÷ 16.5 ≈ <b>33%</b><br>High end: (23 − 15.2) ÷ 15.2 ≈ <b>51%</b>
+    </div>
+
+    <h3>Why this is only a reference</h3>
+    <div class="limits">
+      <div><b>2016 basis</b>We do not know whether the 2016 estimate already included future price growth.</div>
+      <div><b>Wrong index?</b>CPI measures household prices, not construction costs.</div>
+      <div><b>Added scope</b>The figures still include added work, such as Central Walk.</div>
+      <div><b>Latest CPI</b>We used September 2025 CPI because later quarters are published on a new base.</div>
+    </div>
+
+    <p class="takeaway">So even after removing inflation, the cost still rose clearly, but we still cannot call the whole rise an overrun.</p>
+  </section>
+
+  <hr class="sep">
+
+  <section id="refs">
+    <div class="guide">
+      <p class="hi">Thanks for scanning our poster.</p>
+      <p>[1]–[26] are the references on the poster, with the same numbers. [27]–[30] are extra sources for the inflation section on this page.</p>
+      <p>If a point on the poster interests you, find its number below and tap <b>Open source ↗</b> to read the original document.</p>
+    </div>
+    <h2>References</h2>
+    <h3>Audit report and research method</h3>
+<ol class="refs">
+<li>[1] Audit Office of New South Wales 2026, <i>Capital projects 2025</i>, NSW Auditor-General's Report to Parliament, 18 March, viewed 17 October 2026, <a class="open" href="https://www.audit.nsw.gov.au/sites/default/files/documents/Final%20-%20Capital%20Projects%202025.pdf" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[2] Bowen, GA 2009, 'Document analysis as a qualitative research method', <i>Qualitative Research Journal</i>, vol. 9, no. 2, pp. 27–40, <a class="open" href="https://doi.org/10.3316/QRJ0902027" target="_blank" rel="noopener">Open source ↗</a>.</li>
+</ol>
+<h3>NSW Government media releases</h3>
+<ol class="refs">
+<li>[3] NSW Government 2023a, <i>Sydney Metro Review</i>, media release, 13 April, viewed 22 October 2026, <a class="open" href="https://www.nsw.gov.au/media-releases/sydney-metro-review" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[4] NSW Government 2023b, <i>Minns Labor Government will deliver Sydenham to Bankstown section of City and Southwest Metro</i>, media release, 1 August, viewed 22 October 2026, <a class="open" href="https://www.nsw.gov.au/media-releases/sydenham-bankstown-metro" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[5] NSW Government 2024a, <i>Sydney Metro City to open on Monday 19 August</i>, media release, 16 August, viewed 22 October 2026, <a class="open" href="https://www.nsw.gov.au/media-releases/sydney-metro-city-to-open-on-monday-19-august" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[6] NSW Government 2024b, <i>T3 Bankstown line to close from Monday</i>, media release, 25 September, viewed 22 October 2026, <a class="open" href="https://www.nsw.gov.au/media-releases/t3-bankstown-line-to-close-from-monday" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[7] NSW Government 2025, <i>South West Metro conversion period to be extended into 2026</i>, ministerial release, 5 March, viewed 22 October 2026, <a class="open" href="https://www.nsw.gov.au/ministerial-releases/south-west-metro-conversion-period-to-be-extended-into-2026" target="_blank" rel="noopener">Open source ↗</a>.</li>
+</ol>
+<h3>NSW Budget Papers (cost data)</h3>
+<ol class="refs">
+<li>[8] NSW Treasury 2015, <i>Infrastructure statement 2015–16</i>, Budget Paper No. 2, NSW Government, viewed 17 October 2026, <a class="open" href="https://www.treasury.nsw.gov.au/documents/2015-2016-budget-papers-bp2-infrastructure-statement" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[9] NSW Treasury 2016, <i>Infrastructure statement 2016–17</i>, Budget Paper No. 2, NSW Government, viewed 17 October 2026, <a class="open" href="https://treasury.nsw.gov.au/documents/2016-2017-budget-papers-bp2-infrastructure-statement" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[10] NSW Treasury 2017, <i>Infrastructure statement 2017–18</i>, Budget Paper No. 2, NSW Government, viewed 17 October 2026, <a class="open" href="https://treasury.nsw.gov.au/documents/2017-18-budget-papers-bp2-infrastructure-statement" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[11] NSW Treasury 2018, <i>Infrastructure statement 2018–19</i>, Budget Paper No. 2, NSW Government, viewed 17 October 2026, <a class="open" href="https://www.budget.nsw.gov.au/sites/default/files/budget-2018-06/Budget_Paper_2-Infrastructure%20Statement-Budget_201819.pdf" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[12] NSW Treasury 2019, <i>Infrastructure statement 2019–20</i>, Budget Paper No. 2, NSW Government, viewed 17 October 2026, <a class="open" href="https://treasury.nsw.gov.au/documents/nsw-budget-2019-2020-budget-paper-2-infrastructure-statement" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[13] NSW Treasury 2020, <i>Infrastructure statement 2020–21</i>, Budget Paper No. 3, NSW Government, viewed 17 October 2026, <a class="open" href="https://www.parliament.nsw.gov.au/tp/files/78621/2020-21%20Budget%20-%20Budget%20Paper%20No.%203%20-%20Infrastructure%20Statement.pdf" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[14] NSW Treasury 2021, <i>Infrastructure statement 2021–22</i>, Budget Paper No. 3, NSW Government, viewed 17 October 2026, <a class="open" href="https://treasury.nsw.gov.au/documents/nsw-budget-2021-22-budget-paper-no-3-infrastructure-statement" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[15] NSW Treasury 2022, <i>Infrastructure statement 2022–23</i>, Budget Paper No. 3, NSW Government, viewed 17 October 2026, <a class="open" href="https://www.budget.nsw.gov.au/sites/default/files/2022-06/2022-23_Budget-Paper-No-3-Infrastructure-Statement.pdf" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[16] NSW Treasury 2023, <i>Infrastructure statement 2023–24</i>, Budget Paper No. 3, NSW Government, viewed 17 October 2026, <a class="open" href="https://www.budget.nsw.gov.au/sites/default/files/2023-09/2023-24_01_Budget-Paper-No-3-Infrastructure-Statement_infrastructure-statement.pdf" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[17] NSW Treasury 2024, <i>Infrastructure statement 2024–25</i>, Budget Paper No. 3, NSW Government, viewed 17 October 2026, <a class="open" href="https://www.budget.nsw.gov.au/sites/default/files/2024-06/Budget-Paper-No-3-Infrastructure-Statement-2024-25.pdf" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[18] NSW Treasury 2025, <i>Infrastructure statement 2025–26</i>, Budget Paper No. 3, NSW Government, viewed 17 October 2026, <a class="open" href="https://www.budget.nsw.gov.au/sites/default/files/2025-06/bp3-infrastructure-statement-nsw-budget-2025-26.pdf" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[19] NSW Treasury 2026, <i>Infrastructure statement 2026–27</i>, Budget Paper No. 3, NSW Government, viewed 17 October 2026, <a class="open" href="https://www.nsw.gov.au/business-and-economy/nsw-budget/2026-27-budget-papers/budget-paper-no03-infrastructure-statement" target="_blank" rel="noopener">Open source ↗</a>.</li>
+</ol>
+<h3>Sydney Metro reports and updates</h3>
+<ol class="refs">
+<li>[20] Sydney Metro 2017, <i>Chatswood to Sydenham – Sydenham Station and Sydney Metro Trains Facility South: modification report summary</i>, June, Sydney Metro, Sydney, viewed 22 October 2026, <a class="open" href="https://www.sydneymetro.info/sites/default/files/2021-09/Sydenham%2520Station%2520modification%2520report%2520summary%2520June%25202017.pdf" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[21] Sydney Metro 2024, <i>City &amp; Southwest construction compliance report #15: 1 April 2024 to 30 September 2024</i>, version 1, November, viewed 22 October 2026, <a class="open" href="https://www.sydneymetro.info/sites/default/files/2025-01/ConstructionComplianceReport%2015-Apr-Sep24%20-%20Final%20-%20Merged%20v1.pdf" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[22] Sydney Metro 2025, <i>Update on Sydney Metro's Southwest conversion</i>, 5 March, viewed 22 October 2026, <a class="open" href="https://www.sydneymetro.info/article/update-sydney-metros-southwest-conversion" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[23] Sydney Metro 2026a, <i>Southwest Metro completes trial running phase</i>, 1 September, viewed 22 October 2026, <a class="open" href="https://www.sydneymetro.info/article/southwest-metro-completes-trial-running-phase" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[24] Sydney Metro 2026b, <i>City &amp; Southwest construction compliance report #18: 1 October 2025 to 31 March 2026</i>, version 1.2, May, viewed 22 October 2026, <a class="open" href="https://www.sydneymetro.info/sites/default/files/2026-07/Construction_Compliance_Report_18-October_25_to_March_26.pdf" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[25] Sydney Metro 2026c, <i>Southwest Metro project update</i>, April, viewed 22 October 2026, <a class="open" href="https://www.sydneymetro.info/sites/default/files/2026-04/Southwest%20Metro%20project%20update_April%202026.pdf" target="_blank" rel="noopener">Open source ↗</a>.</li>
+</ol>
+<h3>Transport for NSW</h3>
+<ol class="refs">
+<li>[26] Transport for NSW n.d., <i>Southwest Link</i>, viewed 22 October 2026, <a class="open" href="https://transportnsw.info/southwest-link" target="_blank" rel="noopener">Open source ↗</a>.</li>
+
+    </ol>
+<h3>Inflation section (this page only)</h3>
+<ol class="refs">
+<li>[27] Australian Bureau of Statistics 2016, <i>Consumer Price Index, Australia, June 2016</i>, cat. no. 6401.0, ABS, Canberra, viewed 23 October 2026, <a class="open" href="https://www.abs.gov.au/AUSSTATS/abs@.nsf/7d12b0f6763c78caca257061001cc588/28718152b050563fca258057001710a9!OpenDocument" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[28] Australian Bureau of Statistics 2025, <i>Re-referencing the quarterly Consumer Price Index</i>, ABS, Canberra, viewed 23 October 2026, <a class="open" href="https://www.abs.gov.au/statistics/detailed-methodology-information/information-papers/re-referencing-quarterly-consumer-price-index" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[29] Australian Bureau of Statistics n.d., <i>Frequently asked questions (FAQs) about the Consumer Price Index</i>, ABS, Canberra, viewed 23 October 2026, <a class="open" href="https://www.abs.gov.au/articles/frequently-asked-questions-faqs-about-consumer-price-index" target="_blank" rel="noopener">Open source ↗</a>.</li>
+<li>[30] Flyvbjerg, B, Holm, MS &amp; Buhl, S 2002, 'Underestimating costs in public works projects: error or lie?', <i>Journal of the American Planning Association</i>, vol. 68, no. 3, pp. 279–295, <a class="open" href="https://arxiv.org/pdf/1303.6604" target="_blank" rel="noopener">Open source ↗</a>.</li>
+</ol>
+
   </section>
 
   <footer><p>PMGT5811, University of Sydney, 2026.</p></footer>
