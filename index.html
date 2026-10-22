@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sydney Metro Poster References</title>
+<meta name="description" content="Supplementary data and method notes for the PMGT5811 Group 2 poster on Sydney Metro City & Southwest.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+:root{
+  --bg:#FFFFFF; --fg:#2B3442; --muted:#5F6B7A; --accent:#007BB5; --city:#0098DB; --sw:#B87800;
+  --panel:#EEF4F9; --rule:#D9DEE4; --row:#F6F8FA;
+  --display:"Archivo",Arial,"Liberation Sans",sans-serif; --body:"Source Sans 3",Arial,"Liberation Sans",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141A22;--fg:#E6EBF1;--muted:#A3AFBD;--accent:#5CB8E8;--city:#3AAFE6;--sw:#D9A13A;--panel:#1C2530;--rule:#2C3644;--row:#18202A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141A22;--fg:#E6EBF1;--muted:#A3AFBD;--accent:#5CB8E8;--city:#3AAFE6;--sw:#D9A13A;--panel:#1C2530;--rule:#2C3644;--row:#18202A;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-text-size-adjust:100%}
+.wrap{max-width:46rem;margin:0 auto;padding-block:36px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{margin-bottom:8px}
+.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(27px,6vw,38px);line-height:1.12;margin:6px 0 10px;text-wrap:balance}
+.team{font-size:14px;color:var(--muted);margin:0}
+.line{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--city) 0 53%,var(--sw) 53% 100%);margin-top:22px}
+.stations{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-top:6px;gap:8px}
+.stations b{color:var(--fg);font-weight:600}
+.key{background:var(--panel);border-left:4px solid var(--accent);border-radius:4px;padding:14px 16px;margin:26px 0 8px;font-weight:600}
+nav{font-size:15px;margin:18px 0 6px;color:var(--muted)}
+nav a{color:var(--accent);text-decoration:none;white-space:nowrap}
+nav a:hover{text-decoration:underline}
+section{padding-top:30px}
+h2{font-family:var(--display);font-size:21px;line-height:1.25;margin:0 0 10px;color:var(--fg)}
+h2 .n{color:var(--accent);margin-right:6px}
+h3{font-size:17px;margin:18px 0 6px}
+p{margin:0 0 12px;max-width:68ch}
+ul,ol{margin:0 0 12px;padding-left:1.25em}
+li{margin-bottom:4px}
+.note{font-size:14px;color:var(--muted)}
+.tbl{overflow-x:auto;margin:6px 0 12px;border:1px solid var(--rule);border-radius:4px}
+table{border-collapse:collapse;width:100%;font-size:15px;font-variant-numeric:tabular-nums}
+th,td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-weight:600;background:var(--panel)}
+tr:last-child td{border-bottom:none}
+tbody tr:nth-child(even) td{background:var(--row)}
+td.num,th.num{text-align:right;white-space:nowrap}
+#budget td:first-child{white-space:nowrap}
+@media (max-width:480px){table{font-size:14px}th,td{padding:6px 7px}}
+.result{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:8px 0 14px}
+.stat{background:var(--panel);border-radius:4px;padding:12px 14px}
+.stat b{display:block;font-family:var(--display);font-size:26px;line-height:1.1}
+.stat span{font-size:14px;color:var(--muted)}
+.stat.sw b{color:var(--sw)}
+.stat.c b{color:var(--accent)}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;background:var(--panel);padding:1px 5px;border-radius:3px}
+.refs{font-size:14px;padding-left:0;list-style:none}
+.refs li{margin-bottom:6px;padding-left:2.2em;text-indent:-2.2em;overflow-wrap:anywhere}
+.refs a{color:var(--accent)}
+footer{border-top:1px solid var(--rule);margin-top:36px;padding-top:14px;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <p class="eyebrow">PMGT5811 · Tuesday 6–7pm · Group 2 · Poster references</p>
+    <h1>Sydney Metro City &amp; Southwest: references</h1>
+    <p class="team">Zack Xia · Ying Li · Xuanang Zheng · Xinyi Gao · Jiaxi Yuan · Bingdong Bao · Yi Song &nbsp;|&nbsp; Supervisor: Sabine Ludewig</p>
+    <div class="line" role="img" aria-label="Route: City section Chatswood to Sydenham, Southwest section Sydenham to Bankstown"></div>
+    <div class="stations"><span>Chatswood</span><span>Central</span><b>Sydenham</b><span>Bankstown</span></div>
+  </header>
+
+  <section id="refs">
+    <h2>References</h2>
+    <ol class="refs">
+      <li>[1] Audit Office of New South Wales 2026, <i>Capital projects 2025</i>, NSW Auditor-General's Report to Parliament, 18 March, viewed 17 October 2026, <a href="https://www.audit.nsw.gov.au/sites/default/files/documents/Final%20-%20Capital%20Projects%202025.pdf">audit.nsw.gov.au</a>.</li>
+      <li>[2] Bowen, GA 2009, 'Document analysis as a qualitative research method', <i>Qualitative Research Journal</i>, vol. 9, no. 2, pp. 27–40, <a href="https://doi.org/10.3316/QRJ0902027">doi:10.3316/QRJ0902027</a>.</li>
+      <li>[3] NSW Government 2023a, <i>Sydney Metro Review</i>, media release, 13 April, viewed 22 October 2026, <a href="https://www.nsw.gov.au/media-releases/sydney-metro-review">nsw.gov.au</a>.</li>
+      <li>[4] NSW Government 2023b, <i>Minns Labor Government will deliver Sydenham to Bankstown section of City and Southwest Metro</i>, media release, 1 August, viewed 22 October 2026, <a href="https://www.nsw.gov.au/media-releases/sydenham-bankstown-metro">nsw.gov.au</a>.</li>
+      <li>[5] NSW Government 2024a, <i>Sydney Metro City to open on Monday 19 August</i>, media release, 16 August, viewed 22 October 2026, <a href="https://www.nsw.gov.au/media-releases/sydney-metro-city-to-open-on-monday-19-august">nsw.gov.au</a>.</li>
+      <li>[6] NSW Government 2024b, <i>T3 Bankstown line to close from Monday</i>, media release, 25 September, viewed 22 October 2026, <a href="https://www.nsw.gov.au/media-releases/t3-bankstown-line-to-close-from-monday">nsw.gov.au</a>.</li>
+      <li>[7] NSW Government 2025, <i>South West Metro conversion period to be extended into 2026</i>, ministerial release, 5 March, viewed 22 October 2026, <a href="https://www.nsw.gov.au/ministerial-releases/south-west-metro-conversion-period-to-be-extended-into-2026">nsw.gov.au</a>.</li>
+      <li>[8] NSW Treasury 2015, <i>Infrastructure statement 2015–16</i>, Budget Paper No. 2, NSW Government.</li>
+      <li>[9] NSW Treasury 2016, <i>Infrastructure statement 2016–17</i>, Budget Paper No. 2, NSW Government.</li>
+      <li>[10] NSW Treasury 2017, <i>Infrastructure statement 2017–18</i>, Budget Paper No. 2, NSW Government.</li>
+      <li>[11] NSW Treasury 2018, <i>Infrastructure statement 2018–19</i>, Budget Paper No. 2, NSW Government.</li>
+      <li>[12] NSW Treasury 2019, <i>Infrastructure statement 2019–20</i>, Budget Paper No. 2, NSW Government.</li>
+      <li>[13] NSW Treasury 2020, <i>Infrastructure statement 2020–21</i>, Budget Paper No. 3, NSW Government.</li>
+      <li>[14] NSW Treasury 2021, <i>Infrastructure statement 2021–22</i>, Budget Paper No. 3, NSW Government.</li>
+      <li>[15] NSW Treasury 2022, <i>Infrastructure statement 2022–23</i>, Budget Paper No. 3, NSW Government.</li>
+      <li>[16] NSW Treasury 2023, <i>Infrastructure statement 2023–24</i>, Budget Paper No. 3, NSW Government.</li>
+      <li>[17] NSW Treasury 2024, <i>Infrastructure statement 2024–25</i>, Budget Paper No. 3, NSW Government.</li>
+      <li>[18] NSW Treasury 2025, <i>Infrastructure statement 2025–26</i>, Budget Paper No. 3, NSW Government.</li>
+      <li>[19] NSW Treasury 2026, <i>Infrastructure statement 2026–27</i>, Budget Paper No. 3, NSW Government.</li>
+      <li>[20] Sydney Metro 2017, <i>Chatswood to Sydenham – Sydenham Station and Sydney Metro Trains Facility South: modification report summary</i>, June, Sydney Metro, Sydney, viewed 22 October 2026, <a href="https://www.sydneymetro.info/sites/default/files/2021-09/Sydenham%2520Station%2520modification%2520report%2520summary%2520June%25202017.pdf">sydneymetro.info</a>.</li>
+      <li>[21] Sydney Metro 2024, <i>City &amp; Southwest construction compliance report #15: 1 April 2024 to 30 September 2024</i>, version 1, November, viewed 22 October 2026, <a href="https://www.sydneymetro.info/sites/default/files/2025-01/ConstructionComplianceReport%2015-Apr-Sep24%20-%20Final%20-%20Merged%20v1.pdf">sydneymetro.info</a>.</li>
+      <li>[22] Sydney Metro 2025, <i>Update on Sydney Metro's Southwest conversion</i>, 5 March, viewed 22 October 2026, <a href="https://www.sydneymetro.info/article/update-sydney-metros-southwest-conversion">sydneymetro.info</a>.</li>
+      <li>[23] Sydney Metro 2026a, <i>Southwest Metro completes trial running phase</i>, 1 September, viewed 22 October 2026, <a href="https://www.sydneymetro.info/article/southwest-metro-completes-trial-running-phase">sydneymetro.info</a>.</li>
+      <li>[24] Sydney Metro 2026b, <i>City &amp; Southwest construction compliance report #18: 1 October 2025 to 31 March 2026</i>, version 1.2, May, viewed 22 October 2026, <a href="https://www.sydneymetro.info/sites/default/files/2026-07/Construction_Compliance_Report_18-October_25_to_March_26.pdf">sydneymetro.info</a>.</li>
+      <li>[25] Sydney Metro 2026c, <i>Southwest Metro project update</i>, April, viewed 22 October 2026, <a href="https://www.sydneymetro.info/sites/default/files/2026-04/Southwest%20Metro%20project%20update_April%202026.pdf">sydneymetro.info</a>.</li>
+      <li>[26] Transport for NSW n.d., <i>Southwest Link</i>, viewed 22 October 2026, <a href="https://transportnsw.info/southwest-link">transportnsw.info</a>.</li>
+    </ol>
+  </section>
+
+  <footer><p>PMGT5811, University of Sydney, 2026.</p></footer>
+</main>
+</body>
+</html>
